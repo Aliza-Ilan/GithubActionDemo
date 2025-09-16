@@ -12,4 +12,9 @@ jobs:
         run: echo "Hello, GitHub Actions!"
       - name: List files
         run: ls -la 
+      - name: Create a folder and a file
+        run: |
+          mkdir test-folder
+          echo "Hello from inside a file!" > test-folder/file.txt
+          ls -la test-folder
 
